@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vasil_flutter/i_widgets/my_scaffold.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,14 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Icon(
-            Icons.qr_code_2_outlined,
-            size: 200,
-          ),
-        ),
-      ),
+      home: myScaffold()
     );
   }
 }
